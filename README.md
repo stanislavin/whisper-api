@@ -1,0 +1,1 @@
+Dockerized whisper for STT
