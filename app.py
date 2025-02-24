@@ -3,7 +3,7 @@ import whisper
 import os
 
 app = FastAPI()
-model = whisper.load_model("medium")  # You can change to "small", "medium", "large" as needed
+model = whisper.load_model("small")  # You can change to "small", "medium", "large" as needed
 
 @app.post("/transcribe")
 async def transcribe_audio(file: UploadFile = File(...)):

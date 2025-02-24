@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y \
 COPY . .
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install fastapi uvicorn whisper
+RUN pip install -U openai-whisper
+RUN pip install fastapi uvicorn
 RUN pip install python-multipart
 
 # Expose the port for the HTTP API
